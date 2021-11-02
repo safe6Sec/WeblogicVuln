@@ -30,3 +30,7 @@
 ## CVE-2018-2893
 原理：用streamMessageImpl封装一下JRMP即可绕过上一个补丁。
 
+
+## CVE-2018-3248
+原理：用RMIConnectionImpl_Stub代替RemoteObjectInvocationHandler进行绕过。
+

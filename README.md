@@ -34,3 +34,8 @@
 ## CVE-2018-3248
 原理：用RMIConnectionImpl_Stub代替RemoteObjectInvocationHandler进行绕过。
 
+
+## CVE-2020-2551
+原理：利用IIOP进行反序列化,理解rmi和jndi就能理解这个洞。
+重点：JtaTransactionManager
+

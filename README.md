@@ -1,5 +1,7 @@
 # WeblogicVuln
-记录weblogic的一些漏洞原理。方便回忆复习。
+记录weblogic的一些漏洞原理。方便回忆复习。   
+
+持续更新，加油！！
 
 
 # list

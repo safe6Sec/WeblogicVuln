@@ -37,5 +37,5 @@
 
 ## CVE-2020-2551
 原理：利用IIOP进行反序列化,理解rmi和jndi就能理解这个洞。
-重点：JtaTransactionManager
+重点：JtaTransactionManager。发送恶意序列化对象的过程，其实就是bind的过程
 

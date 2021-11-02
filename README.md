@@ -27,4 +27,6 @@
 ## CVE-2018-2628
 原理：还是利用JRMP进行反序列化，Registry被拉黑。采用直接反序列化UnicastRef的方式绕过，或者使用java.rmi.activation.Activator代替Registry类。
 
+## CVE-2018-2893
+原理：用streamMessageImpl封装一下JRMP即可绕过上一个补丁。
 

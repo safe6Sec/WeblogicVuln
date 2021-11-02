@@ -22,4 +22,9 @@
 
 ## CVE-2017-3248
 原理：利用JRMP进行反序列化，也属于CVE-2015-4852的补丁绕过。使用了全新的方式进行反序列。    
-重点：重点理解UnicastRef类   
+重点：重点理解Registry+UnicastRef的方式
+
+## CVE-2018-2628
+原理：还是利用JRMP进行反序列化，Registry被拉黑。采用直接反序列化UnicastRef的方式绕过，或者使用java.rmi.activation.Activator代替Registry类。
+
+

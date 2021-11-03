@@ -47,8 +47,12 @@ weblogic的cve真是多的一批！
 重点：重点类JtaTransactionManager。利用bind发送恶意序列化对象。理解RMI全部攻击方式。https://www.anquanke.com/post/id/257452#h2-0
 
 ### CVE-2020-2555
+原理：用了一条全新的利用链，sink有点像cc1的，source用的是cc5的BadAttributeValueExpException触发limitFilter的toString方法。
+重点：多了两个全新类ReflectionExtractor和LimitFilter组成的利用链，ReflectionExtractor是kink点。理解cc5即可理解此链。
 
 ### CVE-2020-2883
+
+
 
 ## 基于xml
 

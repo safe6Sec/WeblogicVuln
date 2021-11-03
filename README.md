@@ -1,7 +1,9 @@
 # WeblogicVuln
-记录weblogic的一些漏洞原理。方便回忆复习。   
+记录weblogic的一些漏洞原理。方便回忆复习。     
 
-持续更新，加油！！
+weblogic的cve真是多的一批！   
+ 
+持续更新，加油！！  
 
 
 # list
@@ -36,6 +38,9 @@
 
 
 ## CVE-2020-2551
-原理：利用IIOP进行反序列化,理解rmi和jndi就能理解这个洞。
-重点：JtaTransactionManager。发送恶意序列化对象的过程，其实就是bind的过程
+原理：利用IIOP进行反序列化,理解rmi和jndi就能理解这个洞。     
+重点：重点类JtaTransactionManager。利用bind发送恶意序列化对象。理解RMI全部攻击方式。https://www.anquanke.com/post/id/257452#h2-0
+
+## CVE-2020-2555
+
 

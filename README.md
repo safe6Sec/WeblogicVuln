@@ -56,8 +56,7 @@ weblogic的cve真是多的一批！
 ## 基于xml
 
 ### CVE-2017-3506
-原理：wsat组件导致，构造SOAP（XML）格式的请求，在解析的过程中导致XMLDecoder反序列化漏洞。
-重点：
+原理：wsat组件导致，构造SOAP（XML）格式的请求，在解析的过程中导致XMLDecoder反序列化漏洞。   
 
 
 ### CVE-2017-10271

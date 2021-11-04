@@ -50,7 +50,6 @@ weblogic的cve真是多的一批！
 原理：用了一条全新的利用链，sink有点像cc1的，source用的是cc5的BadAttributeValueExpException触发limitFilter的toString方法。
 重点：多了两个全新类ReflectionExtractor和LimitFilter组成的利用链，ReflectionExtractor是kink点。理解cc5即可理解此链。
 
-### CVE-2020-2883
 
 
 
@@ -60,6 +59,10 @@ weblogic的cve真是多的一批！
 
 ### CVE-2017-10271
 
-### CVE-2019-2729
 
 ## 其他
+
+### CVE-2018-2894
+
+
+

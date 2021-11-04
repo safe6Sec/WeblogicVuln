@@ -47,7 +47,7 @@ weblogic的cve真是多的一批！
 重点：重点类JtaTransactionManager。利用bind发送恶意序列化对象。理解RMI全部攻击方式。https://www.anquanke.com/post/id/257452#h2-0
 
 ### CVE-2020-2555
-原理：用了一条全新的利用链，sink有点像cc1的，source用的是cc5的BadAttributeValueExpException触发limitFilter的toString方法。
+原理：用了一条全新的利用链，sink有点像cc1的，source用的是cc5的BadAttributeValueExpException触发limitFilter的toString方法。    
 重点：多了两个全新类ReflectionExtractor和LimitFilter组成的利用链，ReflectionExtractor是kink点。理解cc5即可理解此链。
 
 
@@ -56,8 +56,19 @@ weblogic的cve真是多的一批！
 ## 基于xml
 
 ### CVE-2017-3506
+原理：wsat组件导致，构造SOAP（XML）格式的请求，在解析的过程中导致XMLDecoder反序列化漏洞。
+重点：
+
 
 ### CVE-2017-10271
+原理：上个漏洞CVE-2017-3506修的很草率，CVE-2017-10271利用array或void等标签进行绕过补丁。
+
+
+
+### CVE-2019-2725
+原理：组件_async存在反序列化
+
+推一篇命令回显与内存马https://xz.aliyun.com/t/10323   
 
 
 ## 其他
